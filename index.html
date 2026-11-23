@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>קו מערכת בית שמש | 0733-137272 - המידע האמין והעדכני ביותר</title>
+    <meta name="description" content="קו מערכת בית שמש - הקו החם של הציבור החרדי בבית שמש. חדשות, עדכונים, גמ״חים, שיעורי תורה, לוח דירות ועוד. חייגו: 0733-137272">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Heebo & Assistant for clean, authoritative Hebrew typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Heebo:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for clean icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tone.js for interactive IVR dialer tones -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'Assistant', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            navy: '#0A2240',
+                            navyLight: '#13345E',
+                            navyDark: '#051326',
+                            gold: '#C69738',
+                            goldLight: '#E5BD67',
+                            goldDark: '#9E7422',
+                            cream: '#FDFBF7'
+                        }
+                    },
+                    boxShadow: {
+                        'gold': '0 10px 25px -5px rgba(198, 151, 56, 0.35)',
+                        'navy': '0 10px 30px -5px rgba(10, 34, 64, 0.25)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Heebo', sans-serif;
+            background-color: #FDFBF7;
+            color: #0A2240;
+        }
+        
+        /* Custom subtle background pattern */
+        .bg-pattern {
+            background-color: #0A2240;
+            background-image: radial-gradient(rgba(198, 151, 56, 0.15) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+
+        /* Gold metallic text gradient */
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #E5BD67 0%, #C69738 50%, #9E7422 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Gold button gradient */
+        .btn-gold-gradient {
+            background: linear-gradient(135deg, #D9AC4E 0%, #B88628 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-gold-gradient:hover {
+            background: linear-gradient(135deg, #E5BD67 0%, #C69738 100%);
+            transform: translateY(-2px);
+        }
+
+        /* Pulse animation for live indicator */
+        @keyframes pulse-ring {
+            0% { transform: scale(0.8); opacity: 0.8; }
+            80%, 100% { transform: scale(2); opacity: 0; }
+        }
+        .pulse-dot::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 9999px;
+            background-color: #22c55e;
+            animation: pulse-ring 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-gold selection:text-white pb-20 md:pb-0">
+
+    <!-- Top Trust & Kashrut Banner -->
+    <div class="bg-brand-navyDark text-white py-2 px-4 text-xs sm:text-sm border-b border-brand-gold/30">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span class="inline-flex items-center gap-1.5 text-brand-goldLight font-bold">
+                    <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                    קו כשר ומפוקח
+                </span>
+                <span class="hidden sm:inline text-slate-400">|</span>
+                <span class="hidden sm:inline text-slate-200">המידע האמין והעדכני ביותר לציבור החרדי בבית שמש</span>
+            </div>
+            <div class="flex items-center gap-2 font-bold">
+                <span class="relative flex h-2.5 w-2.5">
+                    <span class="pulse-dot relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                </span>
+                <span class="text-emerald-400">משדרים עכשיו 24/6</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Brand Logo (Custom SVG matching the PDF branding) -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-2xl bg-brand-navy flex items-center justify-center shadow-md group-hover:scale-105 transition-transform p-1.5 border border-brand-gold/40">
+                    <!-- Custom Headset + Soundwaves + 'קו' Logo SVG -->
+                    <svg viewBox="0 0 100 100" class="w-full h-full">
+                        <!-- Soundwaves -->
+                        <path d="M48 22 Q62 22 65 34" fill="none" stroke="#E5BD67" stroke-width="4" stroke-linecap="round"/>
+                        <path d="M48 31 Q56 31 58 39" fill="none" stroke="#C69738" stroke-width="3.5" stroke-linecap="round"/>
+                        <!-- Headset Band -->
+                        <path d="M22 52 C22 25, 78 25, 78 52" fill="none" stroke="#D9AC4E" stroke-width="6" stroke-linecap="round"/>
+                        <!-- Earcup -->
+                        <rect x="14" y="44" width="12" height="24" rx="6" fill="#C69738"/>
+                        <!-- Mic Boom -->
+                        <path d="M20 68 Q22 82 36 82" fill="none" stroke="#D9AC4E" stroke-width="4" stroke-linecap="round"/>
+                        <circle cx="38" cy="82" r="4.5" fill="#E5BD67"/>
+                        <!-- Hebrew Text קו -->
+                        <text x="56" y="68" font-family="Heebo, sans-serif" font-weight="900" font-size="34" fill="#FFFFFF" text-anchor="middle">קו</text>
+                    </svg>
+                </div>
+                <div>
+                    <div class="text-xl sm:text-2xl font-black text-brand-navy leading-none tracking-tight">
+                        קו מערכת <span class="text-brand-gold">בית שמש</span>
+                    </div>
+                    <div class="text-xs font-semibold text-slate-500 mt-1">הקו החם של הציבור החרדי בעיר</div>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex items-center gap-7 font-bold text-slate-700">
+                <a href="#extensions" class="hover:text-brand-gold transition-colors">שלוחות הקו</a>
+                <a href="#simulator" class="hover:text-brand-gold transition-colors">חיוג וירטואלי</a>
+                <a href="#highlights" class="hover:text-brand-gold transition-colors">מדורים בלעדיים</a>
+                <a href="#contact" class="hover:text-brand-gold transition-colors">פרסום ודיווחים</a>
+            </nav>
+
+            <!-- Call CTA Button -->
+            <div class="flex items-center gap-3">
+                <a href="tel:0733137272" class="btn-gold-gradient text-white font-extrabold px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl shadow-gold flex items-center gap-2 text-sm sm:text-base">
+                    <i class="fa-solid fa-phone-volume animate-bounce"></i>
+                    <span dir="ltr">0733-137272</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-pattern text-white relative overflow-hidden pt-12 pb-20 sm:pt-20 sm:pb-28">
+        <!-- Decorative glowing orbs -->
+        <div class="absolute top-0 right-1/4 w-96 h-96 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Right Text Content -->
+                <div class="lg:col-span-7 text-center lg:text-right space-y-6">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-brand-gold/40 text-brand-goldLight text-sm font-bold">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <span>מה קורה בעיר – בשידור חי!</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight">
+                        הקו החם של הציבור החרדי
+                        <span class="block text-gold-gradient mt-2">בבית שמש</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium">
+                        הישארו מעודכנים בכל מה שקורה בבית שמש – בראש שקט! חדשות וסקופים בלעדיים, מעל 500 גמ"חים, לוח דירות, שיעורי תורה, מבצעים בחנויות בעיר ובמת הציבור.
+                    </p>
+
+                    <!-- Primary Phone Display Box -->
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="tel:0733137272" class="w-full sm:w-auto btn-gold-gradient text-brand-navyDark font-black text-xl sm:text-2xl px-8 py-4 rounded-2xl shadow-gold flex items-center justify-center gap-3 group">
+                            <div class="w-10 h-10 rounded-full bg-brand-navy text-brand-goldLight flex items-center justify-center group-hover:rotate-12 transition-transform">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-xs font-bold text-brand-navy/80 leading-none">חייגו עכשיו להאזנה:</div>
+                                <div dir="ltr" class="tracking-wider mt-0.5">0733-137272</div>
+                            </div>
+                        </a>
+
+                        <button onclick="copyPhoneNumber()" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold px-6 py-4 rounded-2xl transition-all flex items-center justify-center gap-2">
+                            <i class="fa-regular fa-copy text-brand-goldLight"></i>
+                            <span id="copyBtnText">העתק מספר</span>
+                        </button>
+                    </div>
+
+                    <!-- Trust Badges Row -->
+                    <div class="pt-6 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 border-t border-white/10">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-black text-brand-goldLight">+500</div>
+                            <div class="text-xs sm:text-sm text-slate-300">גמ"חים במאגר</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-black text-brand-goldLight">100%</div>
+                            <div class="text-xs sm:text-sm text-slate-300">קו כשר ומפוקח</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-black text-brand-goldLight">24/6</div>
+                            <div class="text-xs sm:text-sm text-slate-300">עדכונים שוטפים</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left Visual Card: Brand Emblem & Live Preview -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border-2 border-brand-gold/40 text-brand-navy relative">
+                        <!-- Badge -->
+                        <div class="absolute -top-4 right-6 bg-brand-navy text-brand-goldLight text-xs font-extrabold px-4 py-1.5 rounded-full border border-brand-gold shadow-md">
+                            ✔ כשר ומפוקח למהדרין
+                        </div>
+
+                        <!-- Large Brand Emblem Recreation -->
+                        <div class="flex flex-col items-center text-center pt-2 pb-6 border-b border-slate-100">
+                            <div class="w-36 h-36 sm:w-44 sm:h-44 relative flex items-center justify-center mb-2">
+                                <svg viewBox="0 0 200 200" class="w-full h-full drop-shadow-md">
+                                    <defs>
+                                        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#E5BD67" />
+                                            <stop offset="50%" stop-color="#C69738" />
+                                            <stop offset="100%" stop-color="#9E7422" />
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Sound Waves -->
+                                    <path d="M92 42 Q125 42 132 68" fill="none" stroke="url(#goldGrad)" stroke-width="6" stroke-linecap="round"/>
+                                    <path d="M92 58 Q112 58 117 75" fill="none" stroke="url(#goldGrad)" stroke-width="5" stroke-linecap="round"/>
+                                    <!-- Headphone Arc -->
+                                    <path d="M40 96 C40 38, 160 38, 160 96" fill="none" stroke="url(#goldGrad)" stroke-width="11" stroke-linecap="round"/>
+                                    <!-- Left Earcup -->
+                                    <rect x="24" y="82" width="22" height="44" rx="11" fill="url(#goldGrad)"/>
+                                    <!-- Right Earcup hint -->
+                                    <rect x="154" y="86" width="14" height="32" rx="7" fill="url(#goldGrad)"/>
+                                    <!-- Mic Arm -->
+                                    <path d="M35 126 Q38 154 68 154" fill="none" stroke="url(#goldGrad)" stroke-width="7" stroke-linecap="round"/>
+                                    <ellipse cx="74" cy="154" rx="11" ry="8" fill="url(#goldGrad)"/>
+                                    <!-- Big Navy Text 'קו' -->
+                                    <text x="110" y="138" font-family="Heebo, sans-serif" font-weight="900" font-size="82" fill="#0A2240" text-anchor="middle">קו</text>
+                                </svg>
+                            </div>
+                            <h2 class="text-3xl font-black text-brand-navy tracking-tight leading-none">מערכת</h2>
+                            <div class="text-2xl font-extrabold text-brand-gold mt-1">בית שמש</div>
+                        </div>
+
+                        <!-- Quick Ticker / Latest Bulletins -->
+                        <div class="mt-6 space-y-3">
+                            <div class="flex items-center justify-between text-xs font-bold text-slate-500">
+                                <span class="flex items-center gap-1.5 text-brand-navy">
+                                    <i class="fa-solid fa-radio text-brand-gold"></i>
+                                    כותרות אחרונות בקו:
+                                </span>
+                                <span>עודכן היום</span>
+                            </div>
+
+                            <div class="bg-brand-cream p-3.5 rounded-xl border border-brand-gold/20 text-sm space-y-2.5">
+                                <div class="flex items-start gap-2.5">
+                                    <span class="bg-brand-navy text-white text-xs font-bold px-2 py-0.5 rounded mt-0.5">שלוחה 1</span>
+                                    <p class="font-semibold text-slate-800">מבזק חדשות בית שמש: כל העדכונים מהשכונות, תחבורה ופרויקטים בעיר.</p>
+                                </div>
+                                <div class="flex items-start gap-2.5">
+                                    <span class="bg-brand-gold text-white text-xs font-bold px-2 py-0.5 rounded mt-0.5">בלעדי</span>
+                                    <p class="font-semibold text-slate-800">מבצעי השבוע בחנויות בית שמש – הטבות מיוחדות למאזיני הקו בלבד!</p>
+                                </div>
+                            </div>
+
+                            <a href="#simulator" class="block w-full text-center py-3 rounded-xl bg-brand-navy hover:bg-brand-navyLight text-white font-bold text-sm transition-colors">
+                                <i class="fa-solid fa-dialpad ml-1.5 text-brand-goldLight"></i>
+                                בדקו את מפת השלוחות האינטראקטיבית
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- All 12 Core Services / Extensions Grid -->
+    <section id="extensions" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+            <span class="text-brand-gold font-extrabold text-sm tracking-wider uppercase">הכל במקום אחד ובשיחת טלפון</span>
+            <h2 class="text-3xl sm:text-4xl font-black text-brand-navy mt-2">מה מחכה לכם בקו מערכת בית שמש?</h2>
+            <p class="text-slate-600 mt-3 text-lg">מגוון רחב של שלוחות תוכן, מידע קהילתי, שירותים לתושב ותוכן תורני ואיכותי לכל המשפחה</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap justify-center gap-2 mb-10" id="categoryFilters">
+            <button onclick="filterServices('all', this)" class="filter-btn active px-5 py-2.5 rounded-full font-bold text-sm bg-brand-navy text-white shadow-md transition-all">הכל (12)</button>
+            <button onclick="filterServices('news', this)" class="filter-btn px-5 py-2.5 rounded-full font-bold text-sm bg-white text-slate-700 border border-slate-200 hover:border-brand-gold transition-all">חדשות וקהילה</button>
+            <button onclick="filterServices('directory', this)" class="filter-btn px-5 py-2.5 rounded-full font-bold text-sm bg-white text-slate-700 border border-slate-200 hover:border-brand-gold transition-all">לוחות וחיפוש</button>
+            <button onclick="filterServices('torah', this)" class="filter-btn px-5 py-2.5 rounded-full font-bold text-sm bg-white text-slate-700 border border-slate-200 hover:border-brand-gold transition-all">תורה, תוכן ומבצעים</button>
+        </div>
+
+        <!-- Services Grid (Exact 12 items from the user's PDF) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="servicesGrid">
+            
+            <!-- 1. עדכונים וחדשות -->
+            <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-navy border border-slate-200/80 hover:border-brand-gold/60 transition-all group" data-category="news">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-navy/5 text-brand-navy group-hover:bg-brand-navy group-hover:text-brand-goldLight flex items-center justify-center text-xl transition-colors">
+                        <i class="fa-solid fa-newspaper"></i>
+                    </div>
+                    <span class="text-xs font-extrabold px-3 py-1 rounded-full bg-brand-cream text-brand-goldDark border border-brand-gold/30">שלוחה 1</span>
+                </div>
+                <h3 class="text-xl font-extrabold text-brand-navy mb-2">עדכונים וחדשות בעיר</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">דיווחים שוטפים, אמינים ומהירים על כל המתרחש ברחבי בית שמש, בשכונות, בעירייה ובקהילה.</p>
+            </div>
+
+            <!-- 2. במת הציבור -->
+            <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-navy border border-slate-200/80 hover:border-brand-gold/60 transition-all group" data-category="news">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-navy/5 text-brand-navy group-hover:bg-brand-navy group-hover:text-brand-goldLight flex items-center justify-center text-xl transition-colors">
+                        <i class="fa-solid fa-microphone-lines"></i>
+                    </div>
+                    <span class="text-xs font-extrabold px-3 py-1 rounded-full bg-brand-cream text-brand-goldDark border border-brand-gold/30">שלוחה 2</span>
+                </div>
+                <h3 class="text-xl font-extrabold text-brand-navy mb-2">במת הציבור – תושבי העיר מדברים</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">המקום שלכם להשמיע קול! העלאת נושאים חשובים, פניות ציבור, הצעות לשיפור ושיתוף התושבים.</p>
+            </div>
+
+            <!-- 3. לוח דירות -->
+            <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-navy border border-slate-200/80 hover:border-brand-gold/60 transition-all group" data-category="directory">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-navy/5 text-brand-navy group-hover:bg-brand-navy group-hover:text-brand-goldLight flex items-center justify-center text-xl transition-colors">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <span class="text-xs font-extrabold px-3 py-1 rounded-full bg-brand-cream text-brand-goldDark border border-brand-gold/30">שלוחה 3</span>
+                </div>
+                <h3 class="text-xl font-extrabold text-brand-navy mb-2">לוח דירות</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">מאגר דירות למכירה, להשכרה, יחידות דיור ודירות לשבתות בכל שכונות בית שמש – מתעדכן מדי יום.</p>
+            </div>
+
+            <!-- 4. חיפוש עסקים -->
+            <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-navy border border-slate-200/80 hover:border-brand-gold/60 transition-all group" data-category="directory">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-navy/5 text-brand-navy group-hover:bg-brand-navy group-hover:text-brand-goldLight flex items-center justify-center text-xl transition-colors">
+                        <i class="fa-solid fa-magnifying-glass-location"></i>
+                    </div>
+                    <span class="text-xs font-extrabold px-3 py-1 rounded-full bg-brand-cream text-brand-goldDark border border-brand-gold/30">שלוחה 4</span>
+                </div>
+                <h3 class="text-xl font-extrabold text-brand-navy mb-2">חיפוש עסקים</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">מדריך העסקים ובעלי המקצוע המלא של בית שמש. איתור מהיר לפי תחום, שכונה ושעות פעילות.</p>
+            </div>
+
+            <!-- 5. חיפוש גמ"חים -->
+            <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-navy border-2 border-brand-gold/40 hover:border-brand-gold transition-all group relative" data-category="directory">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-gold/15 text-brand-goldDark group-hover:bg-brand-gold group-hover:text-white flex items-center justify-center text-xl transition-colors">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <span class="text-xs font-extrabold px-3 py-1 rounded-full bg-brand-navy text-brand-goldLight">שלוחה 5 • +500 גמ"חים</span>
+                </div>
+                <h3 class="text-xl font-extrabold text-brand-navy mb-2">חיפוש גמ"חים – מעל 500 גמ"חים</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">המאגר הגדול והמקיף בעיר! איתור מיידי של גמ"חים מכל הסוגים לפי קטגוריה ורחוב בשעת הצורך.</p>
+            </div>
+
+            <!-- 6. שיעורי תורה -->
+            <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-navy border border-slate-200/80 hover:border-brand-gold/60 transition-all group" data-category="torah">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-navy/5 text-brand-navy group-hover:bg-brand-navy group-hover:text-brand-goldLight flex items-center justify-center text-xl transition-colors">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <span class="text-xs font-extrabold px-3 py-1 rounded-full bg-brand-cream text-brand-goldDark border border-brand-gold/30">שלוחה 6</span>
+                </div>
+                <h3 class="text-xl font-extrabold text-brand-navy mb-2">שיעורי תורה ממיטב הרבנים</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">מבחר עשיר של שיעורי תורה, הלכה, פרשת שבוע, מוסר והשקפה מפי גדולי הרבנים והמרצים.</p>
+            </div>
+
+            <!-- 7. שירים לפי שמות הזמרים -->
+            <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-navy border border-slate-200/80 hover:border-brand-gold/60 transition-all group" data-category="torah">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-navy/5 text-brand-navy group-hover:bg-brand-navy group-hover:text-brand-goldLight flex items-center justify-center text-xl transition-colors">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+                    <span class="text-xs font-extrabold px-3 py-1 rounded-full bg-brand-cream text-brand-goldDark border border-brand-gold/30">שלוחה 7</span>
+                </div>
+                <h3 class="text-xl font-extrabold text-brand-navy mb-2">שירים לפי שמות הזמרים</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">ספריית מוזיקה חסידית ויהודית איכותית, מסודרת לנוחיותכם לפי שמות הזמרים האהובים.</p>
+            </div>
+
+            <!-- 8. מדור שבועי -->
+            <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-navy border border-slate-200/80 hover:border-brand-gold/60 transition-all group" data-category="torah">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-navy/5 text-brand-navy group-hover:bg-brand-navy group-hover:text-brand-goldLight flex items-center justify-center text-xl transition-colors">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <span class="text-xs font-extrabold px-3 py-1 rounded-full bg-brand-cream text-brand-goldDark border border-brand-gold/30">שלוחה 8</span>
+                </div>
+                <h3 class="text-xl font-extrabold text-brand-navy mb-2">מדור שבועי מקצועי</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">פינות תוכן מרתקות מדי שבוע בנושאי שוק ההון וכלכלת המשפחה, בריאות, חינוך ילדים ועוד.</p>
+            </div>
+
+            <!-- 9. מבצעים בלעדיים -->
+            <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-navy border border-slate-200/80 hover:border-brand-gold/60 transition-all group" data-category="torah">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-navy/5 text-brand-navy group-hover:bg-brand-navy group-hover:text-brand-goldLight flex items-center justify-center text-xl transition-colors">
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                    <span class="text-xs font-extrabold px-3 py-1 rounded-full bg-brand-cream text-brand-goldDark border border-brand-gold/30">שלוחה 9</span>
+                </div>
+                <h3 class="text-xl font-extrabold text-brand-navy mb-2">מבצעים בלעדיים בחנויות בעיר</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">הנחות ענק והטבות מיוחדות בעסקים ובחנויות ברחבי בית שמש – למאזיני הקו בלבד!</p>
+            </div>
+
+            <!-- 10. ראיונות עם בעלי עסקים -->
+            <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-navy border border-slate-200/80 hover:border-brand-gold/60 transition-all group" data-category="news">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-navy/5 text-brand-navy group-hover:bg-brand-navy group-hover:text-brand-goldLight flex items-center justify-center text-xl transition-colors">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <span class="text-xs font-extrabold px-3 py-1 rounded-full bg-brand-cream text-brand-goldDark border border-brand-gold/30">שלוחה 10</span>
+                </div>
+                <h3 class="text-xl font-extrabold text-brand-navy mb-2">ראיונות עם בעלי עסקים ואנשי עשייה</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">שיחות עומק מרתקות עם הדמויות המובילות, היזמים ובעלי העסקים שבונים את בית שמש.</p>
+            </div>
+
+            <!-- 11. מיזמים קהילתיים -->
+            <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-navy border border-slate-200/80 hover:border-brand-gold/60 transition-all group" data-category="news">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-navy/5 text-brand-navy group-hover:bg-brand-navy group-hover:text-brand-goldLight flex items-center justify-center text-xl transition-colors">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <span class="text-xs font-extrabold px-3 py-1 rounded-full bg-brand-cream text-brand-goldDark border border-brand-gold/30">שלוחה 11</span>
+                </div>
+                <h3 class="text-xl font-extrabold text-brand-navy mb-2">מיזמים קהילתיים במהלך השנה</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">פעילויות, הגרלות, חידונים נושאי פרסים ויוזמות חיבור וחסד לתושבי העיר לאורך כל השנה.</p>
+            </div>
+
+            <!-- 12. סקופים בלעדיים -->
+            <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-navy border border-slate-200/80 hover:border-brand-gold/60 transition-all group" data-category="news">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-navy/5 text-brand-navy group-hover:bg-brand-navy group-hover:text-brand-goldLight flex items-center justify-center text-xl transition-colors">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <span class="text-xs font-extrabold px-3 py-1 rounded-full bg-brand-cream text-brand-goldDark border border-brand-gold/30">שלוחה 0</span>
+                </div>
+                <h3 class="text-xl font-extrabold text-brand-navy mb-2">סקופים בלעדיים – רק למאזיני הקו</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">הידיעות הראשוניות, החשיפות והעדכונים החמים שמגיעים אליכם לפני כולם ישירות לטלפון.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Interactive IVR Phone Simulator Section -->
+    <section id="simulator" class="bg-brand-navy py-16 sm:py-24 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Instructions -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-gold/20 text-brand-goldLight text-xs font-bold border border-brand-gold/40">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <span>התנסות אינטראקטיבית</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-black leading-tight">
+                        הכירו את תפריט הקו <span class="text-brand-goldLight">בלחיצת כפתור</span>
+                    </h2>
+                    <p class="text-slate-300 text-lg leading-relaxed">
+                        רוצים לדעת לאיזו שלוחה להגיע מיד כשאתם מחייגים ל-<strong class="text-white" dir="ltr">0733-137272</strong>? לחצו על מקשי הטלפון שלפניכם כדי לראות את פירוט השלוחה ולשמוע צליל חיוג!
+                    </p>
+
+                    <div class="bg-brand-navyLight/60 border border-white/10 rounded-2xl p-5 space-y-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">פתוח בכל הקווים הכשרים</h4>
+                                <p class="text-xs text-slate-300">הקו מאושר ומפוקח לרווחת כלל תושבי בית שמש.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-brand-gold/20 text-brand-goldLight flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-bell"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">הצטרפות לרשימת צינתוקים</h4>
+                                <p class="text-xs text-slate-300">ניתן להירשם דרך הקו לקבלת התראה קצרה כשעולה מבזק חשוב.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Kosher Phone UI -->
+                <div class="lg:col-span-6 flex justify-center">
+                    <div class="w-full max-w-sm bg-slate-900 rounded-[2.5rem] p-5 border-4 border-slate-700 shadow-2xl">
+                        <!-- Speaker notch -->
+                        <div class="w-16 h-1.5 bg-slate-700 rounded-full mx-auto mb-4"></div>
+
+                        <!-- Phone Screen -->
+                        <div class="bg-brand-cream text-brand-navy rounded-2xl p-4 mb-5 shadow-inner min-h-[165px] flex flex-col justify-between border-2 border-brand-gold/40">
+                            <div class="flex justify-between items-center text-[11px] font-bold text-slate-500 border-b border-slate-200 pb-1.5">
+                                <span>קו כשר ✔</span>
+                                <span dir="ltr" class="text-brand-navy font-extrabold">0733-137272</span>
+                                <span><i class="fa-solid fa-signal"></i></span>
+                            </div>
+
+                            <div id="ivrScreenContent" class="py-3 text-center my-auto">
+                                <div class="text-xs font-bold text-brand-goldDark mb-1">ברוכים הבאים לקו מערכת בית שמש</div>
+                                <div class="text-base font-black text-brand-navy">הקישו על מקש לבדיקת השלוחה</div>
+                            </div>
+
+                            <div class="flex justify-between items-center text-[11px] font-bold text-brand-navy bg-brand-gold/15 px-2.5 py-1 rounded-lg">
+                                <span>שלוחה נבחרת: <span id="selectedKeyBadge">-</span></span>
+                                <a href="tel:0733137272" class="underline text-brand-goldDark">חייג בפועל ↵</a>
+                            </div>
+                        </div>
+
+                        <!-- Keypad Grid -->
+                        <div class="grid grid-cols-3 gap-2.5" dir="ltr">
+                            <button onclick="pressKey('1')" class="ivr-btn bg-slate-800 hover:bg-slate-700 active:scale-95 text-white rounded-xl py-3 transition-all border border-slate-700">
+                                <div class="text-xl font-black leading-none">1</div>
+                                <div class="text-[10px] text-brand-goldLight mt-1 font-sans">חדשות</div>
+                            </button>
+                            <button onclick="pressKey('2')" class="ivr-btn bg-slate-800 hover:bg-slate-700 active:scale-95 text-white rounded-xl py-3 transition-all border border-slate-700">
+                                <div class="text-xl font-black leading-none">2</div>
+                                <div class="text-[10px] text-brand-goldLight mt-1 font-sans">במת הציבור</div>
+                            </button>
+                            <button onclick="pressKey('3')" class="ivr-btn bg-slate-800 hover:bg-slate-700 active:scale-95 text-white rounded-xl py-3 transition-all border border-slate-700">
+                                <div class="text-xl font-black leading-none">3</div>
+                                <div class="text-[10px] text-brand-goldLight mt-1 font-sans">לוח דירות</div>
+                            </button>
+                            <button onclick="pressKey('4')" class="ivr-btn bg-slate-800 hover:bg-slate-700 active:scale-95 text-white rounded-xl py-3 transition-all border border-slate-700">
+                                <div class="text-xl font-black leading-none">4</div>
+                                <div class="text-[10px] text-brand-goldLight mt-1 font-sans">עסקים</div>
+                            </button>
+                            <button onclick="pressKey('5')" class="ivr-btn bg-slate-800 hover:bg-slate-700 active:scale-95 text-white rounded-xl py-3 transition-all border border-slate-700">
+                                <div class="text-xl font-black leading-none">5</div>
+                                <div class="text-[10px] text-brand-goldLight mt-1 font-sans">גמ"חים</div>
+                            </button>
+                            <button onclick="pressKey('6')" class="ivr-btn bg-slate-800 hover:bg-slate-700 active:scale-95 text-white rounded-xl py-3 transition-all border border-slate-700">
+                                <div class="text-xl font-black leading-none">6</div>
+                                <div class="text-[10px] text-brand-goldLight mt-1 font-sans">שיעורי תורה</div>
+                            </button>
+                            <button onclick="pressKey('7')" class="ivr-btn bg-slate-800 hover:bg-slate-700 active:scale-95 text-white rounded-xl py-3 transition-all border border-slate-700">
+                                <div class="text-xl font-black leading-none">7</div>
+                                <div class="text-[10px] text-brand-goldLight mt-1 font-sans">שירים</div>
+                            </button>
+                            <button onclick="pressKey('8')" class="ivr-btn bg-slate-800 hover:bg-slate-700 active:scale-95 text-white rounded-xl py-3 transition-all border border-slate-700">
+                                <div class="text-xl font-black leading-none">8</div>
+                                <div class="text-[10px] text-brand-goldLight mt-1 font-sans">מדור שבועי</div>
+                            </button>
+                            <button onclick="pressKey('9')" class="ivr-btn bg-slate-800 hover:bg-slate-700 active:scale-95 text-white rounded-xl py-3 transition-all border border-slate-700">
+                                <div class="text-xl font-black leading-none">9</div>
+                                <div class="text-[10px] text-brand-goldLight mt-1 font-sans">מבצעים</div>
+                            </button>
+                            <button onclick="pressKey('*')" class="ivr-btn bg-slate-800 hover:bg-slate-700 active:scale-95 text-white rounded-xl py-3 transition-all border border-slate-700">
+                                <div class="text-xl font-black leading-none">*</div>
+                                <div class="text-[10px] text-slate-400 mt-1 font-sans">תפריט ראשי</div>
+                            </button>
+                            <button onclick="pressKey('0')" class="ivr-btn bg-slate-800 hover:bg-slate-700 active:scale-95 text-white rounded-xl py-3 transition-all border border-slate-700">
+                                <div class="text-xl font-black leading-none">0</div>
+                                <div class="text-[10px] text-brand-goldLight mt-1 font-sans">סקופים/מערכת</div>
+                            </button>
+                            <button onclick="pressKey('#')" class="ivr-btn bg-slate-800 hover:bg-slate-700 active:scale-95 text-white rounded-xl py-3 transition-all border border-slate-700">
+                                <div class="text-xl font-black leading-none">#</div>
+                                <div class="text-[10px] text-slate-400 mt-1 font-sans">השארת הודעה</div>
+                            </button>
+                        </div>
+
+                        <!-- Bottom Call Button on Phone -->
+                        <div class="mt-4">
+                            <a href="tel:0733137272" class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-black flex items-center justify-center gap-2 shadow-lg transition-colors">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>חיוג ישיר לקו</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights & Weekly Columns Section -->
+    <section id="highlights" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-brand-gold/30">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div class="space-y-6">
+                    <div class="inline-block px-4 py-1 rounded-full bg-brand-cream border border-brand-gold/40 text-brand-goldDark font-bold text-sm">
+                        בית שמש – עיר העתיד של הציבור החרדי
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-black text-brand-navy leading-tight">
+                        למה אלפי תושבים בבית שמש מאזינים לנו מדי יום?
+                    </h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <div class="w-7 h-7 rounded-full bg-brand-gold/20 text-brand-goldDark flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-sm"></i>
+                            </div>
+                            <div>
+                                <strong class="text-brand-navy font-extrabold">אמינות וסינון מוקפד:</strong>
+                                <span class="text-slate-600"> כל ידיעה ודיווח נבדקים בקפידה תחת פיקוח מלא ובהתאמה לציבור החרדי.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-7 h-7 rounded-full bg-brand-gold/20 text-brand-goldDark flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-sm"></i>
+                            </div>
+                            <div>
+                                <strong class="text-brand-navy font-extrabold">חיבור אמיתי לקהילה:</strong>
+                                <span class="text-slate-600"> ממאגר של מעל 500 גמ"חים ועד לוח דירות ומיזמים קהילתיים לאורך כל השנה.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-7 h-7 rounded-full bg-brand-gold/20 text-brand-goldDark flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-sm"></i>
+                            </div>
+                            <div>
+                                <strong class="text-brand-navy font-extrabold">ערך כלכלי וצרכני לתושב:</strong>
+                                <span class="text-slate-600"> מבצעים בלעדיים בחנויות בעיר ומדור שבועי מקצועי בשוק ההון, בריאות וחינוך.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Weekly Columns Cards -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-brand-cream p-5 rounded-2xl border border-brand-gold/25 text-center space-y-2">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-navy text-brand-goldLight mx-auto flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-coins"></i>
+                        </div>
+                        <h4 class="font-extrabold text-brand-navy">שוק ההון וכלכלה</h4>
+                        <p class="text-xs text-slate-600">תובנות וכלים להתנהלות כלכלית נבונה למשפחה</p>
+                    </div>
+                    <div class="bg-brand-cream p-5 rounded-2xl border border-brand-gold/25 text-center space-y-2">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-navy text-brand-goldLight mx-auto flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <h4 class="font-extrabold text-brand-navy">בריאות ורפואה</h4>
+                        <p class="text-xs text-slate-600">טיפים וראיונות עם מומחים לשמירה על הבריאות</p>
+                    </div>
+                    <div class="bg-brand-cream p-5 rounded-2xl border border-brand-gold/25 text-center space-y-2">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-navy text-brand-goldLight mx-auto flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h4 class="font-extrabold text-brand-navy">חינוך והורות</h4>
+                        <p class="text-xs text-slate-600">הדרכה וכלים מעשיים מאנשי חינוך מובילים</p>
+                    </div>
+                    <div class="bg-brand-cream p-5 rounded-2xl border border-brand-gold/25 text-center space-y-2">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-navy text-brand-goldLight mx-auto flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <h4 class="font-extrabold text-brand-navy">עסקים ומבצעים</h4>
+                        <p class="text-xs text-slate-600">הטבות בלעדיות בחנויות בית שמש למאזינים</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Submit Tip or Advertise Section -->
+    <section id="contact" class="pb-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-brand-navy rounded-3xl p-8 sm:p-12 text-white shadow-2xl border border-brand-gold/40 relative overflow-hidden">
+            <div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                <div class="md:col-span-6 space-y-4">
+                    <h2 class="text-2xl sm:text-3xl font-black">רוצים לפרסם עסק, גמ"ח או לדווח למערכת?</h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        בעלי עסקים בבית שמש? רוצים להגיע לאלפי בתי אב בעיר באמצעות מבצע בלעדי או ראיון? או שיש לכם ידיעה חדשותית / עדכון גמ"ח? שלחו לנו הודעה או חייגו למערכת!
+                    </p>
+                    <div class="pt-2 space-y-2 text-sm">
+                        <div class="flex items-center gap-2 text-brand-goldLight font-bold">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>מוקד המערכת והאזנה: <a href="tel:0733137272" dir="ltr" class="underline">0733-137272</a></span>
+                        </div>
+                        <div class="flex items-center gap-2 text-slate-300">
+                            <i class="fa-solid fa-location-dot text-brand-goldLight"></i>
+                            <span>בית שמש – עיר העתיד של הציבור החרדי</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-6">
+                    <form onsubmit="handleFormSubmit(event)" class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/15 space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold text-brand-goldLight mb-1">שם מלא / שם העסק</label>
+                            <input type="text" required placeholder="הכנס שם..." class="w-full px-4 py-2.5 rounded-xl bg-white text-brand-navy font-medium text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-brand-goldLight mb-1">טלפון לחזרה</label>
+                            <input type="tel" required placeholder="05X-XXXXXXX" dir="ltr" class="w-full px-4 py-2.5 rounded-xl bg-white text-brand-navy font-medium text-sm text-right focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-brand-goldLight mb-1">נושא הפנייה</label>
+                            <select class="w-full px-4 py-2.5 rounded-xl bg-white text-brand-navy font-medium text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                                <option>פרסום עסק / מבצע בלעדי למאזינים</option>
+                                <option>הוספת גמ"ח למאגר הגמ"חים</option>
+                                <option>דיווח חדשותי / סקופ למערכת</option>
+                                <option>פרסום דירה בלוח הדירות</option>
+                                <option>פנייה לבמת הציבור</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full btn-gold-gradient text-brand-navyDark font-black py-3 rounded-xl shadow-lg text-sm">
+                            שליחת פנייה למערכת
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-navyDark text-slate-400 py-12 border-t border-brand-gold/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <div class="flex flex-col items-center justify-center">
+                <div class="text-2xl font-black text-white">
+                    קו מערכת <span class="text-brand-goldLight">בית שמש</span>
+                </div>
+                <p class="text-sm text-brand-goldLight/90 font-semibold mt-1">
+                    ✔ קו כשר • מפוקח • המידע האמין והעדכני ביותר לציבור החרדי בבית שמש
+                </p>
+            </div>
+
+            <div class="inline-block bg-white/5 border border-white/10 rounded-2xl px-8 py-4">
+                <div class="text-xs text-slate-300 mb-1">חייגו עכשיו להאזנה מכל מכשיר כשר:</div>
+                <a href="tel:0733137272" dir="ltr" class="text-3xl font-black text-brand-goldLight hover:text-white transition-colors tracking-wider">
+                    0733-137272
+                </a>
+            </div>
+
+            <div class="text-xs text-slate-500 pt-4 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-2">
+                <span>© כל הזכויות שמורות לקו מערכת בית שמש.</span>
+                <span>בית שמש – עיר העתיד של הציבור החרדי</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Bottom Call Bar -->
+    <div class="md:hidden fixed bottom-0 inset-x-0 z-50 bg-brand-navyDark/95 backdrop-blur-md border-t border-brand-gold/40 p-3 shadow-2xl">
+        <a href="tel:0733137272" class="w-full btn-gold-gradient text-brand-navyDark font-black py-3 rounded-xl flex items-center justify-center gap-2.5 text-lg shadow-gold">
+            <i class="fa-solid fa-phone-volume animate-pulse"></i>
+            <span>חייגו עכשיו:</span>
+            <span dir="ltr">0733-137272</span>
+        </a>
+    </div>
+
+    <!-- Toast Notification Modal (Replaces alert()) -->
+    <div id="toastNotification" class="fixed top-24 left-1/2 -translate-x-1/2 z-50 transform transition-all duration-300 opacity-0 pointer-events-none translate-y-[-10px]">
+        <div class="bg-brand-navy text-white px-6 py-3.5 rounded-2xl shadow-2xl border border-brand-gold flex items-center gap-3">
+            <i class="fa-solid fa-circle-check text-emerald-400 text-lg"></i>
+            <span id="toastMessage" class="font-bold text-sm">הפעולה בוצעה בהצלחה!</span>
+        </div>
+    </div>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // Show custom toast notification
+        function showToast(message) {
+            const toast = document.getElementById('toastNotification');
+            const toastMsg = document.getElementById('toastMessage');
+            toastMsg.textContent = message;
+            
+            toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-[-10px]');
+            toast.classList.add('opacity-100', 'translate-y-0');
+
+            setTimeout(() => {
+                toast.classList.remove('opacity-100', 'translate-y-0');
+                toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-[-10px]');
+            }, 3500);
+        }
+
+        // Copy phone number to clipboard (with fallback for iframe compatibility)
+        function copyPhoneNumber() {
+            const phone = '0733-137272';
+            const textArea = document.createElement('textarea');
+            textArea.value = phone;
+            document.body.appendChild(textArea);
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                const btnText = document.getElementById('copyBtnText');
+                btnText.textContent = 'המספר הועתק!';
+                showToast('המספר 0733-137272 הועתק ללוח!');
+                setTimeout(() => {
+                    btnText.textContent = 'העתק מספר';
+                }, 2500);
+            } catch (err) {
+                showToast('חייגו: 0733-137272');
+            }
+            document.body.removeChild(textArea);
+        }
+
+        // Category Filter for the 12 Services
+        function filterServices(category, btnElement) {
+            // Update active button styling
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('bg-brand-navy', 'text-white', 'shadow-md');
+                btn.classList.add('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+            });
+            btnElement.classList.remove('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+            btnElement.classList.add('bg-brand-navy', 'text-white', 'shadow-md');
+
+            // Filter cards
+            const cards = document.querySelectorAll('.service-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // IVR Phone Simulator Logic + DTMF Tone Synthesis
+        const ivrMap = {
+            '1': { title: 'עדכונים וחדשות בעיר', desc: 'דיווחים שוטפים על כל המתרחש בבית שמש.' },
+            '2': { title: 'במת הציבור', desc: 'תושבי העיר מדברים – השמיעו את קולכם!' },
+            '3': { title: 'לוח דירות בית שמש', desc: 'דירות למכירה, להשכרה ויחידות דיור בעיר.' },
+            '4': { title: 'חיפוש עסקים', desc: 'מדריך בעלי המקצוע והחנויות בבית שמש.' },
+            '5': { title: 'חיפוש גמ"חים', desc: 'מאגר ענק של מעל 500 גמ"חים בכל השכונות.' },
+            '6': { title: 'שיעורי תורה', desc: 'מיטב השיעורים מפי רבני ומרצי העיר.' },
+            '7': { title: 'שירים לפי שמות הזמרים', desc: 'האזנה למוזיקה חסידית ויהודית מובחרת.' },
+            '8': { title: 'מדור שבועי', desc: 'פינות מקצועיות: שוק ההון, בריאות, חינוך ועוד.' },
+            '9': { title: 'מבצעים בלעדיים', desc: 'הטבות בחנויות בעיר – למאזיני הקו בלבד!' },
+            '0': { title: 'סקופים בלעדיים ומערכת', desc: 'חשיפות ראשוניות ופנייה למערכת הקו.' },
+            '*': { title: 'חזרה לתפריט הראשי', desc: 'ברוכים הבאים לקו מערכת בית שמש.' },
+            '#': { title: 'השארת הודעה / דיווח', desc: 'הקלטת הודעה למערכת או לבמת הציבור.' }
+        };
+
+        // Play DTMF-like tone using Tone.js
+        function playDtmfTone(key) {
+            try {
+                if (typeof Tone !== 'undefined') {
+                    if (Tone.context.state !== 'running') {
+                        Tone.start();
+                    }
+                    const synth = new Tone.Synth({
+                        oscillator: { type: 'sine' },
+                        envelope: { attack: 0.01, decay: 0.1, sustain: 0.05, release: 0.1 }
+                    }).toDestination();
+                    
+                    const freqs = {
+                        '1': 'C5', '2': 'D5', '3': 'E5',
+                        '4': 'F5', '5': 'G5', '6': 'A5',
+                        '7': 'B5', '8': 'C6', '9': 'D6',
+                        '*': 'A4', '0': 'E6', '#': 'B4'
+                    };
+                    synth.triggerAttackRelease(freqs[key] || 'C5', '16n');
+                }
+            } catch (e) {
+                // Ignore audio errors if browser blocks autoplay
+            }
+        }
+
+        function pressKey(key) {
+            playDtmfTone(key);
+            const info = ivrMap[key];
+            const screen = document.getElementById('ivrScreenContent');
+            const badge = document.getElementById('selectedKeyBadge');
+            
+            badge.textContent = key;
+            screen.innerHTML = `
+                <div class="text-xs font-extrabold text-brand-goldDark mb-1">שלוחה ${key}</div>
+                <div class="text-base font-black text-brand-navy leading-tight mb-1">${info.title}</div>
+                <div class="text-xs text-slate-600 leading-snug">${info.desc}</div>
+            `;
+        }
+
+        // Form Submission Handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            event.target.reset();
+            showToast('פנייתך התקבלה בהצלחה! צוות קו מערכת בית שמש יחזור אליך בהקדם.');
+        }
+    </script>
+</body>
+</html>
